@@ -5,18 +5,17 @@ const loginForm = document.querySelector("#login-form");
 function getLoginInfo()
 {
   const userName = localStorage.getItem(LOGIN_KEY);
+  const loginnk = document.querySelector("#login-nk");
+  const loginok = document.querySelector("#login-ok");
+  const todoList = document.querySelector("#todo-list");
 
   if (userName !== null)
   {
-    const loginnk = document.querySelector("#login-nk");
-    const loginok = document.querySelector("#login-ok");
-    const todoList = document.querySelector("#todo-list");
-  
     loginnk.classList.add("hidden");
     loginok.classList.remove("hidden");
     todoList.classList.remove("hidden");
   
-    loginok.outerText = `Hello, ${userName}!`;
+    loginok.innerText = `Hello, ${userName}!`;
   }
 
   return;
