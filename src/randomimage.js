@@ -8,8 +8,6 @@ const randomNumber = Math.floor(Math.random() * images.length);
 
 const backImage = document.querySelector("#main");
 
-console.dir(backImage);
-
 //backImage.style.width = "200px";
 //backImage.style.height = "200px";
 //backImage.style.backgroundImage = `url(img/${images[randomNumber]})`;
