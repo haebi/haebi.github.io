@@ -1,1 +1,45 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body>
+    <div id="clock">00:00:00</div>
+    <div>
+      <div id="login-nk">
+        <form id="login-form">
+          <input type="text" id="id_username" placeholder="what's your name ?" required/>
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+      <div id="login-ok" class="hidden">
+        
+      </div>
+    </div>
+    <div id="todo-list" class="hidden">
+      <div>
+        <form id="todo-form">
+          <input type="text" id="id_todo" placeholder="insert to do ..." required/>
+          <input type="submit" value="Add" />
+        </form>
+        <ul id="todo-list">
+        </ul>
+      </div>
+    </div>
+    <div id="image">image...</div>
+    <div id="weather">
+
+    </div>
+    <div id="city">
+      
+    </div>
+    <script src="src/clock.js"></script>
+    <script src="src/login.js"></script>
+    <script src="src/todolist.js"></script>
+    <script src="src/randomimage.js"></script>
+    <script src="src/weather.js"></script>
+  </body>
+</html>
